@@ -23,7 +23,7 @@ function loadConfig() {
     if (file_exists($CONFIG_FILE)) {
         return json_decode(file_get_contents($CONFIG_FILE), true);
     }
-    return ['password_hash' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'];
+    return ['password_hash' => '$2a$12$wAyOi2qglBv9PoSEfLQAkOyS19FMoC15kGUm5smvOY.5fMYcuWy2q'];
 }
 
 $config = loadConfig();
